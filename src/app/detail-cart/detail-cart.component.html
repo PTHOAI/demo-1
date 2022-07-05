@@ -1,0 +1,8 @@
+<p>List Product</p>
+<div *ngIf="listCart.length <= 0">No Product</div>
+<ul>
+    <li *ngFor="let item of listCart">
+        <img width="100" height="100" [src]="item.image" alt="">
+        <p>{{item.desc}}</p>
+    </li>
+</ul>

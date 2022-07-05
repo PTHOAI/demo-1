@@ -1,0 +1,5 @@
+<img [src]="itemBook?.image" width="150" height="150" alt="">
+<span class="infor">Lớp {{itemBook?.class}}</span>
+<p class="infor"> Tên sách: {{itemBook?.desc}}</p>
+<button *ngIf="isAdd" (click)="addCart()" style="margin-left: 23px; cursor:pointer">Add to Cart</button>
+<button *ngIf="!isAdd" (click)="removeCart()" style="margin-left: 23px; cursor:pointer">Remove to Cart</button>

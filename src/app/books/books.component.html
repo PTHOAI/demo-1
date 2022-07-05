@@ -1,0 +1,8 @@
+
+<app-cart></app-cart>
+<br/>
+<div class="list-books">
+    <ng-container  *ngFor="let book of books">
+        <app-book class="infor" [itemBook] = "book"></app-book>
+    </ng-container>
+</div>
